@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="dashboard.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="dashboard-container">
+  <h3 class="me">Company Metrics</h3>
+  <div class="metrics-grid">
+    <div class="metric total-revenue">
+      <span class="value1"><b>$406,411.29</b></span>
+      <span class="label"><b>Total Revenue</b></span>
+    </div>
+    <div class="metric total-jobs-avg">
+        <span class="v3"><b>$620</b></span>
+        <span class="label"><b>Total Jobs Avg</b></span>
+    </div>
+    <div class="metric tickets-created">
+        <span class="v4"><b>655</b></span>
+        <span class="label"><b>Tickets Created</b></span>
+    </div>
+    <div class="metric tickets-scheduled">
+        <span class="v5"><b>735</b></span>
+        <span class="label"><b>Tickets Scheduled</b></span>
+    </div>
+    <div class="metric outstanding-amount">
+        <span class="value2"><b>$110,448.8</b></span>
+        <span class="label"><b>Outstanding Amount</b></span>
+    </div>
+    <div class="metric memberships-sold">
+        <span class="v6"><b>105</b></span>
+        <span class="label"><b>Memberships Sold</b></span>
+    </div>
+    <div class="metric jobs-completed">
+        <span class="v7"><b>436</b></span>
+        <span class="label"><b>Jobs Completed</b></span>
+    </div>
+    <div class="metric total-cancelled">
+        <span class="v8"><b>65</b></span>
+        <span class="label"><b>Total Cancelled</b></span>
+    </div>
+  </div>
+
+
+  <div class="charts-container">
+    <div class="chart-block">
+      <h3 class="chart-title">Revenue By Job Location</h3>
+      <div class="chart">
+        <canvas id="revenueByLocation"></canvas>
+      </div>
+    </div>
+    <div class="chart-block">
+      <h3 class="chart-title">Revenue By Job Type</h3>
+      <div class="chart">
+        <canvas id="revenueByJobType"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="dashboard.js"></script>
+</body>
+</html>
